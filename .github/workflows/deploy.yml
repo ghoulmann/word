@@ -34,10 +34,6 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
-      - name: Initialize Quartz Theme Mappings
-        run: npx quartz theme init
-        # Re-links the symlinks (.quartz/plugins) directly out of npm packages on the runner
-
       - name: Build Quartz
         run: npx quartz build
 
