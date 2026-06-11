@@ -1,0 +1,23 @@
+# Node dependencies
+node_modules/
+npm-debug.log*
+
+# Build output and caching
+public/
+.quartz-cache/
+.quartz/
+tsconfig.tsbuildinfo
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.obsidian/
+prof/
+
+# Environment configurations
+.replit
+replit.nix
+private/
+
+# Compiled CLI targets
+quartz/cli/tui/dist/
