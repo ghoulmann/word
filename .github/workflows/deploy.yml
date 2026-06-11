@@ -34,9 +34,6 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
-      - name: Sync Quartz v5 Plugins
-        run: npx quartz plugin sync # Generates the missing .quartz/plugins index maps
-
       - name: Build Quartz
         run: npx quartz build
 
