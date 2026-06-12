@@ -2,6 +2,8 @@
 
 A typed-relationship ontology of writing quality concepts, published as a static site with Quartz v5.
 
+Live site: **https://ghoulmann.github.io/word/**
+
 ## Prerequisites
 
 - Node.js ≥ 22
@@ -9,52 +11,49 @@ A typed-relationship ontology of writing quality concepts, published as a static
 
 ## First-time setup
 
-Install Node dependencies and then the Quartz community plugins:
-
 ```bash
-npm ci
-npx quartz plugin install
+make install
 ```
 
-You only need to re-run `plugin install` when `quartz.lock.json` changes (i.e. after pulling a commit that adds or updates plugins).
+This runs `npm ci` (Node dependencies) then `npx quartz plugin install` (Quartz community plugins from `quartz.lock.json`). Re-run the plugin step if `quartz.lock.json` changes after a pull.
 
 ## Local development
 
 ```bash
-make serve          # live-reload dev server at http://localhost:8080
-make serve PORT=9070   # use a different port
+make serve           # http://localhost:8080, live-reload
+make serve PORT=9070 # different port
 ```
 
-The dev server builds with an empty base path so all URLs work at `/` — no `/word` prefix.
+Quartz's `--serve` mode automatically sets the base path to `/` regardless of the `baseUrl` in `quartz.config.yaml`. All URLs work at the root — no `/word` prefix. This is the canonical local dev workflow.
 
-If you need to preview a static build (e.g. to check build output without a watcher), build for local and serve separately:
+## Committing and deploying
 
 ```bash
-make build-local    # builds public/ for http://localhost:8080
-make build          # builds public/ for the production URL (ghoulmann.github.io/word)
+make sync
 ```
 
-> **Why two build targets?**  
-> `baseUrl: ghoulmann.github.io/word` in `quartz.config.yaml` tells the SPA router to  
-> prepend `/word` to all navigation URLs. That is correct for GitHub Pages (the repo is  
-> served at `/word`), but it breaks a server that serves `public/` at the root.  
-> `make build-local` overrides the base URL so pages work at `http://localhost:PORT/`.
+`npx quartz sync` stages and commits content changes, then pushes to `main`. The GitHub Actions workflow in `.github/workflows/deploy.yml` picks up the push and deploys to GitHub Pages automatically.
 
-## Deploying
+If you need more control over the commit message, use git directly and push to `main`.
 
-Push to `main`. GitHub Actions runs `.github/workflows/deploy.yml` which:
+## Static builds
 
-1. Installs Node dependencies (`npm ci`)
-2. Restores or populates the plugin cache (keyed on `quartz.lock.json`)
-3. Installs Quartz community plugins (`npx quartz plugin install`)
-4. Builds the site (`npx quartz build`)
-5. Deploys `public/` to GitHub Pages
+```bash
+make build          # production build (ghoulmann.github.io/word)
+make build-local    # local build — URLs at http://localhost:8080, no /word prefix
+```
 
-The live site is at **https://ghoulmann.github.io/word/**.
+Static builds are for inspecting output or deploying elsewhere. For day-to-day previewing, `make serve` is faster and more convenient.
+
+> **Why two build targets?**
+> `baseUrl: ghoulmann.github.io/word` in `quartz.config.yaml` tells the SPA router
+> to prepend `/word` to all navigation. That is correct on GitHub Pages (the repo is
+> served at that subpath) but breaks a plain static server at `/`.
+> `make build-local` passes `--baseUrl localhost:8080` to override it.
 
 ## Content
 
-All content lives in `content/`. Edit files there and the dev server hot-reloads.
+All content lives in `content/`. Edit files there and `make serve` hot-reloads.
 
 | Directory | What goes here |
 |-----------|---------------|
@@ -68,16 +67,28 @@ All content lives in `content/`. Edit files there and the dev server hot-reloads
 | `content/by-audience/` | Concepts by audience sensitivity |
 | `content/reference/` | Glossary, bibliography, cheat sheet |
 
-## Updating plugins
-
-To pull the latest version of a community plugin:
+## Plugin management
 
 ```bash
+# Install from lockfile (normal)
+npx quartz plugin install
+
+# Install and update to latest versions
 npx quartz plugin install --latest
+
+# Add a new plugin
+npx quartz plugin add github:quartz-community/<name>
 ```
 
-To add a new plugin from GitHub:
+## Makefile targets
 
-```bash
-npx quartz plugin add github:quartz-community/<name>
+```
+make serve          live-reload dev server (use this for day-to-day editing)
+make build          production build
+make build-local    local static build (no /word prefix)
+make install        first-time setup (deps + plugins)
+make deps           npm ci only
+make plugins        quartz plugin install only
+make sync           commit + push content to trigger deploy
+make clean          remove public/
 ```
