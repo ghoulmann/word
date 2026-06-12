@@ -163,6 +163,9 @@ export const plugins: Record<string, Record<string, (...args: unknown[]) => void
   "unlisted-pages": {
     UnlistedPages: (...args: unknown[]) => { componentRegistry.setOptionOverrides("unlisted-pages", args[0] as Record<string, unknown>); },
   },
+  "wqo-components": {
+    WqoConceptView: (...args: unknown[]) => { componentRegistry.setOptionOverrides("wqo-components", args[0] as Record<string, unknown>); },
+  },
 }
 
 export const AliasRedirects = plugins["alias-redirects"].AliasRedirects
@@ -209,3 +212,4 @@ export const SyntaxHighlighting = plugins["syntax-highlighting"].SyntaxHighlight
 export const TableOfContentsTransformer = plugins["table-of-contents"].TableOfContentsTransformer
 export const TagList = plugins["tag-list"].TagList
 export const UnlistedPages = plugins["unlisted-pages"].UnlistedPages
+export const WqoConceptView = plugins["wqo-components"].WqoConceptView

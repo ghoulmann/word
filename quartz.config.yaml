@@ -41,6 +41,13 @@ configuration:
         highlight: rgba(143, 159, 169, 0.15)
         textHighlight: "#b3aa0288"
 plugins:
+  - source: ./plugins/wqo-components
+    enabled: true
+    order: 200
+    layout:
+      position: afterBody
+      priority: 5
+      display: all
   - source: github:quartz-community/created-modified-date
     enabled: true
     options:
