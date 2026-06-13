@@ -260,10 +260,10 @@
       "installedAt": "2026-06-03T13:32:36.647Z"
     },
     "wqo-components": {
-      "source": "./plugins/wqo-components",
-      "resolved": "/home/rik/writing/quartz-site/plugins/wqo-components",
-      "commit": "local",
-      "installedAt": "2026-06-12T12:58:38.328Z"
+      "source": "github:ghoulmann/wqo-components",
+      "resolved": "https://github.com/ghoulmann/wqo-components.git",
+      "commit": "a0b3b25e75e2e3fc235f42a0ccf05eeb8aef7d57",
+      "installedAt": "2026-06-13T12:33:04.029Z"
     }
   }
 }
