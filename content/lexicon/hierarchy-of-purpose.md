@@ -32,8 +32,8 @@ classification:
   responsible_role: [author, structural-editor]
 relationships:
   prerequisite_for: [rhetorical-arrangement, genre, audience-awareness]
-  aspect_of: audience-awareness
-  related_to: [topic-type, coherence]
+  aspect_of: rhetorical-situation
+  related_to: [topic-type, coherence, audience-awareness]
 diagnostic_question: >
   What is the single primary goal this document must accomplish?
   If you had to cut everything except what serves that goal, what would remain?

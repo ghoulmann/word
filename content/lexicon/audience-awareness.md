@@ -31,7 +31,7 @@ classification:
 relationships:
   prerequisite_for: [genre, rhetorical-arrangement, plain-language, hierarchy-of-purpose]
   related_to: [tone-voice-cadence, localization, terminology-consistency]
-  aspect_of: hierarchy-of-purpose
+  aspect_of: rhetorical-situation
 diagnostic_question: >
   Can you name your reader specifically — not "a general audience" but
   a particular person with particular knowledge, goals, and context —

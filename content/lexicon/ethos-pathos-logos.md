@@ -28,7 +28,7 @@ classification:
   responsible_role: [author, structural-editor]
 relationships:
   related_to: [informal-fallacy, audience-awareness, rhetorical-arrangement, hierarchy-of-purpose]
-  aspect_of: rhetorical-arrangement
+  aspect_of: rhetorical-situation
 diagnostic_question: >
   Does the text establish the author's credibility appropriately for
   the audience (ethos), engage the reader's values and concerns
