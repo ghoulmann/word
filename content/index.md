@@ -6,6 +6,8 @@ tags: []
 
 # Writing Quality Ontology
 
+[[about|About this ontology]] — what WQO is, its CAMEO lineage, scope, and related projects.
+
 A reference lexicon of writing quality concerns. Each concept is classified across 13 dimensions — layer, scale, evaluator, impact, responsible role, and eight others — and linked to related concepts via typed relationships: `subtype_of`, `impediment_to`, `increases_risk_of`, `prerequisite_for`, `aspect_of`, and more. The relationship graph is navigable per concept and visible in the sidebar topology view.
 
 The five editorial layers (Functional, Computational, Structural, Mechanical, Editorial) are one classification axis, not the organizing structure. Concepts belong to multiple layers, multiple stages, and multiple impact categories.
