@@ -52,3 +52,29 @@ Every concept in the Writing Quality Ontology has an entry here. Each entry incl
 ### Cross-cutting
 - [[plain-language]] — a multi-layer philosophy of writing for the reader's ease, not the writer's display
 - [[paramedic-method]] — Richard Lanham's diagnostic procedure for identifying and restructuring weak prose
+
+## Supporting Concepts
+
+Outcomes, processes, and measurement frameworks referenced by the primary WQO concepts above.
+
+### Outcomes (what writing quality affects)
+- [[reader-comprehension]] — the degree to which a reader extracts intended meaning
+- [[reader-trust]] — the reader's confidence that a text is accurate and produced in good faith
+- [[readability]] — the aggregate ease with which a text can be processed and understood
+- [[coherence-failure]] — the breakdown of logical continuity; what poor coherence produces
+- [[accessibility-presentation]] — structural and navigational presentation for assistive technologies
+- [[inclusivity]] — the property of not excluding readers based on identity, background, or ability
+
+### Processes
+- [[mechanical-editing]] — the sentence-level correction pass: grammar, punctuation, spelling
+- [[rag-retrieval]] — how writing structure determines quality in retrieval-augmented generation pipelines
+
+### Writing techniques
+- [[active-voice]] — grammatical construction naming agents as subjects
+- [[active-voice-prose]] — prose in which active constructions predominate; output of paramedic editing
+- [[sentence-efficiency]] — ratio of meaningful content to total words
+- [[word-level-error]] — localized lexical or morphological failure (misspelling, wrong word form)
+
+### Readability metrics
+- [[flesch-kincaid-score]] — reading ease and grade-level estimates from sentence and word length
+- [[gunning-fog-index]] — years-of-education estimate based on sentence length and polysyllabic word proportion
