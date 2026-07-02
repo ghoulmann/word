@@ -37,6 +37,11 @@ diagnostic_question: >
 evaluation_tools:
   - Reverse outline (manual: summarize each paragraph in one sentence, then check if they form a logical sequence)
   - Peer review
+analogy:
+  writing_concept: coherence
+  engineering_equivalent: design-rationale-integrity
+  shared_property: unbroken-logical-chain
+  failure_mode: argument-cannot-be-reconstructed
 tags: [lexicon, layer:structural, writing-stage:revising, concern-type:logical]
 ---
 
@@ -72,6 +77,4 @@ The most reliable diagnostic for coherence is the **reverse outline**: after dra
 
 Coherence is `prerequisite_for` mechanical editing. Editing prose at the mechanical level before the argument is coherent is editing sentences that may be cut, restructured, or reordered. See [[triage-sequencing]].
 
-## Engineering Design Parallel
-
-In engineering design, coherence corresponds to the logical consistency of a design rationale: does each decision follow from the previous one, and does the whole design argument hold together? An incoherent design document is one where the chosen solution doesn't demonstrably address the problem stated in the define stage — the argument chain is broken.
+**Engineering parallel:** Coherence maps to *design rationale integrity* — both require that each decision follow demonstrably from the last; both fail when the reasoning chain breaks and a reviewer cannot reconstruct how the conclusion was reached.

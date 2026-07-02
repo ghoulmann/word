@@ -41,6 +41,11 @@ diagnostic_question: >
 evaluation_tools:
   - Reverse outline (summarize each section; check the sequence makes sense)
   - Reader walk-through (ask a representative reader to narrate their experience)
+analogy:
+  writing_concept: rhetorical-arrangement
+  engineering_equivalent: solution-sequencing-in-design-review
+  shared_property: prerequisite-information-precedes-dependent-conclusions
+  failure_mode: evaluation-without-criteria
 tags: [lexicon, layer:structural, writing-stage:revising, concern-type:rhetorical]
 ---
 
@@ -74,6 +79,4 @@ Arrangement is addressed during revising, when the content is assembled and the 
 
 **Spatial or topical**: organized by location or category rather than by argument or time. Used for reference content, catalogs, comparative analyses.
 
-## Engineering Design Parallel
-
-Rhetorical arrangement in engineering corresponds to the structure of a design report or presentation: problem definition must precede solution description; criteria must precede solution evaluation; alternatives must precede final selection justification. An engineering presentation that presents the chosen solution before establishing the criteria is an arrangement failure — the reader has no basis for evaluating the choice.
+**Engineering parallel:** Rhetorical arrangement maps to *solution sequencing in design review* — both require that criteria precede evaluation and problem precede solution; both fail when conclusions appear before the evidence needed to judge them.

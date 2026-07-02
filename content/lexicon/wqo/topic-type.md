@@ -40,6 +40,11 @@ diagnostic_question: >
 evaluation_tools:
   - Diataxis documentation (diataxis.fr)
   - Content type audit: identify which sentences serve each function
+analogy:
+  writing_concept: topic-type
+  engineering_equivalent: document-type-matching-use-case
+  shared_property: form-matches-reader-task
+  failure_mode: content-mismatched-to-use
 tags: [lexicon, layer:functional, writing-stage:prewriting, concern-type:architectural]
 ---
 
@@ -71,6 +76,4 @@ Topic type is a [[boundary-control]] concern at document scale: once you have id
 
 Diataxis provides a genre taxonomy for technical documentation. As a [[genre]] specification, it defines both the form and the purpose of each type. Choosing the wrong type is a [[genre]] violation: the reader's expectations for what kind of document this is are not met.
 
-## Engineering Design Parallel
-
-In the *communicate* stage of engineering design, topic type determines what kind of documentation is needed. A design rationale is an explanation. An assembly procedure is a how-to guide. A parts list is a reference. A training exercise is a tutorial. Mixing these — writing an assembly procedure as a design rationale, for example — produces documentation that fails the reader's actual need.
+**Engineering parallel:** Topic type maps to *document type matching use case* — a design rationale, an assembly procedure, and a parts list answer different questions; mismatching document type to reader task fails equally in writing and in engineering documentation.

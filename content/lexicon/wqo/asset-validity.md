@@ -39,6 +39,11 @@ evaluation_tools:
   - Broken link checker (e.g., htmltest, linkchecker, Quartz build)
   - CI/CD link validation step
   - Manual spot-check of external links
+analogy:
+  writing_concept: asset-validity
+  engineering_equivalent: dependency-integrity
+  shared_property: referenced-artifact-exists-and-resolves
+  failure_mode: broken-dependency-fails-silently-at-use-time
 tags: [lexicon, layer:functional, layer:computational, writing-stage:publishing, concern-type:technical]
 ---
 
@@ -68,6 +73,4 @@ Asset validity is addressed at the `publishing` stage — it is largely irreleva
 
 Link checking is fully automatable. Tools like `htmltest`, `linkchecker`, and built-in CI/CD link validation steps can check all internal and external links in a document set at build time. Quartz builds validate internal wikilinks. External links require HTTP requests and are more expensive to check frequently, but can be run as part of a scheduled CI job.
 
-## Engineering Design Parallel
-
-In the *test* stage of engineering design, asset validity corresponds to dependency verification: are all external libraries, APIs, and data sources available and at the expected versions? A system that works in development but fails in production because a dependency is missing or at the wrong version has an asset validity failure.
+**Engineering parallel:** Asset validity maps to *dependency integrity* — both require that every referenced artifact exist and resolve at use time; both fail silently: a broken link and a missing library are invisible until the moment a reader or build process tries to follow them.

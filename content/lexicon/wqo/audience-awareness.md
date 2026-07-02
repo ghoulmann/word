@@ -40,6 +40,11 @@ evaluation_tools:
   - Audience persona development (workshop method)
   - Reader feedback / usability testing
   - Peer review from a representative reader
+analogy:
+  writing_concept: audience-awareness
+  engineering_equivalent: user-definition-in-problem-statement
+  shared_property: receiver-modeled-before-solution
+  failure_mode: solution-misaligned-to-actual-need
 tags: [lexicon, layer:functional, writing-stage:prewriting, concern-type:rhetorical]
 ---
 
@@ -82,6 +87,4 @@ D13 [[audience_sensitivity]] captures heightened risk for specific reader profil
 
 Ignoring these profiles means treating one reader population as the default and others as edge cases. This is both an inclusivity failure and a functional failure — the document does not serve its stated readers.
 
-## Engineering Design Parallel
-
-In engineering design, audience awareness is the "define" stage: understanding the problem requires understanding who has the problem, what they need, and what constraints shape the solution. Every design decision downstream is constrained by the user (audience) definition established here. An engineering document that ignores audience — presenting a solution without establishing what problem the reader needs solved — is as functionally misaligned as prose written for the wrong reader.
+**Engineering parallel:** Audience awareness maps to *user definition in the problem statement* — both require that the receiver be modeled before any solution is designed; both fail when a solution is specified without establishing whose problem it actually solves.

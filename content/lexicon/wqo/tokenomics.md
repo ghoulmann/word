@@ -48,6 +48,11 @@ relationships:
   - controlled-vocabulary
   - lard-factor
   - plain-language
+analogy:
+  writing_concept: tokenomics
+  engineering_equivalent: context-window-budgeting
+  shared_property: finite-capacity-allocated-to-competing-content
+  failure_mode: high-cost-low-value-content-displaces-essential-content
 tags:
 - lexicon
 - layer:computational
@@ -86,6 +91,4 @@ Tokenomics is a relatively new concern — it emerged with the adoption of large
 
 That said, tokenomics failures have downstream effects on human-facing quality: a document that doesn't fit within a model's context window cannot be effectively summarized, searched, or processed, which means its information may not reach the humans who need it.
 
-## Engineering Design Parallel
-
-In the *build* and *test* stages of engineering design, tokenomics corresponds to performance optimization: how efficiently does the system use available resources? Overly verbose prompts or documentation that cannot be processed within model constraints are engineering quality failures analogous to a function that exceeds memory limits or a query that times out.
+**Engineering parallel:** Tokenomics maps to *context window budgeting* — both allocate finite capacity across competing content; both fail when high-cost, low-value content displaces the content the model (or reader) actually needs.

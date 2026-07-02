@@ -41,6 +41,11 @@ diagnostic_question: >
 evaluation_tools:
   - Mode identification (read the passage: what is its primary purpose?)
   - Structural outline: what organizational logic underlies each section?
+analogy:
+  writing_concept: rhetorical-mode
+  engineering_equivalent: design-pattern
+  shared_property: recurring-structure-applied-to-recurring-problem
+  failure_mode: wrong-pattern-applied-to-different-problem-class
 tags: [lexicon, layer:structural, writing-stage:prewriting, concern-type:rhetorical]
 ---
 
@@ -66,6 +71,4 @@ Mode mismatches are also triage failures: an explanatory passage evaluated for a
 
 [[Genre]] and rhetorical mode are related but distinct. Genre specifies the form-convention contract (what kind of document is this). Mode specifies the organizing logic within that document. A research paper (genre) contains both exposition (literature review) and argumentation (discussion and conclusions). A tutorial (genre) uses narration. A reference (genre) uses description or exposition.
 
-## Engineering Design Parallel
-
-In engineering design documentation, mode governs what each section does: the problem definition section is exposition or argumentation (why this problem matters); the design description section is exposition (how the solution works); the rationale section is argumentation (why this solution was chosen). Mixing modes without structure — writing a design rationale as exposition rather than argumentation — produces a section that describes a solution without ever arguing for it.
+**Engineering parallel:** Rhetorical mode maps to *design patterns* — both are named recurring structures applied to recurring problem types; both fail when the mode (or pattern) is selected by convention rather than by fit, and the structure doesn't match the actual problem.

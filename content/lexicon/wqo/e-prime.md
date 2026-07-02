@@ -37,6 +37,11 @@ diagnostic_question: >
 evaluation_tools:
   - E-Prime checker scripts (automated search for "to be" forms)
   - Manual search: find all forms of "is," "are," "was," "were," "be," "been," "being"
+analogy:
+  writing_concept: e-prime
+  engineering_equivalent: behavioral-specification
+  shared_property: claims-describe-action-not-static-state
+  failure_mode: state-claims-are-unverifiable-and-untestable
 tags: [lexicon, layer:editorial, writing-stage:drafting, concern-type:stylistic]
 ---
 
@@ -65,6 +70,4 @@ It is not appropriate for all writing contexts. Technical documentation with ide
 
 E-Prime partially controls [[nominalization]] (nominalizations often appear with "to be": "the implementation *is* complete" → "we implemented and finished"), and [[passive-voice]] (passive constructions require "to be" as an auxiliary: "was implemented"). It does not replace the [[paramedic-method]] — the paramedic method is a diagnostic procedure; E-Prime is a writing constraint.
 
-## Engineering Design Parallel
-
-In engineering design documents, identity statements and passive constructions often cluster in the *communicate* stage — presentations, reports, and documentation. E-Prime as a revising exercise can surface vague claims ("the solution is effective") that need to be operationalized ("the solution reduced error rate by 12%").
+**Engineering parallel:** E-Prime maps to *behavioral specification* — both replace 'X is Y' state claims with 'X does Z under condition C' behavioral claims; both fail when existence statements substitute for operational definitions that could actually be tested.

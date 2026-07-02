@@ -44,6 +44,11 @@ evaluation_tools:
   - Reader protocol (ask a reader to narrate their sense of location at each section boundary)
   - Peer review (note any "why are we here?" moments)
   - Reverse outline check (can a reader reconstruct the structure from the text alone?)
+analogy:
+  writing_concept: signposting
+  engineering_equivalent: interface-documentation
+  shared_property: navigation-contract-predicts-structure
+  failure_mode: user-cannot-orient-without-exhaustive-exploration
 tags: [lexicon, layer:structural, writing-stage:revising, concern-type:rhetorical]
 ---
 
@@ -81,6 +86,4 @@ Ask a reader to narrate their sense of location at each section boundary. "Where
 
 Absent signposting in a short document is a minor friction. In a long or complex document — a specification, a technical report, a multi-section guide — absent signposting collapses the reader's ability to navigate the argument. At that scale, the document's [[coherence]] depends structurally on signposting: the reader cannot evaluate whether the argument holds if they cannot track its stages.
 
-## Engineering Design Parallel
-
-In engineering specifications and design documents, signposting corresponds to the overview sections, scope statements, and cross-references that tell the reader how sections relate. A specification that defines terms without explaining how they will be used, or that presents requirements without indicating their relationship to each other, fails to signpost its structure. During the *communicate* stage, signposting is a reader-experience quality gate.
+**Engineering parallel:** Signposting maps to *interface documentation* — both tell the user where they are, where they've been, and where they can go; without it, readers and API consumers alike must explore exhaustively to orient themselves.

@@ -46,6 +46,11 @@ evaluation_tools:
   - Heading-only scan (read only H1–H3 in sequence; assess whether they form a coherent outline)
   - Screen reader navigation test
   - Vale custom rule (heading-to-content coherence heuristics)
+analogy:
+  writing_concept: heading-clarity
+  engineering_equivalent: interface-specification
+  shared_property: contract-predicts-contents
+  failure_mode: consumers-cannot-navigate-without-reading-everything
 tags: [lexicon, layer:structural, writing-stage:revising, concern-type:rhetorical]
 ---
 
@@ -81,6 +86,4 @@ The diagnostic question: *does a reader who reads only this heading get an accur
 
 A single vague heading is a localized navigation failure. A document-wide pattern of vague, misleading, or inconsistent headings makes the document's structure illegible — neither human readers nor retrieval systems can build a reliable map. At that threshold, heading revision is a structural intervention requiring [[rhetorical-arrangement]] and [[information-design]] review before individual heading rewrites.
 
-## Engineering Design Parallel
-
-In technical documentation of engineering systems, headings correspond to section identifiers in specifications and test plans. A vague heading in a test plan ("Additional Tests," "Edge Cases") undermines traceability: engineers cannot link requirements to specific test sections. During the *build* and *communicate* stages, heading clarity is a structural quality gate.
+**Engineering parallel:** Heading clarity maps to *interface specification* — both are contracts: the heading (or interface) promises what the section (or component) delivers; when the contract is vague, consumers cannot navigate without reading everything.

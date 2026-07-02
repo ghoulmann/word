@@ -42,6 +42,11 @@ evaluation_tools:
   - Cultural review by a representative reader from the target locale
   - Idiom and metaphor audit
   - Locale-specific review (date formats, measurement units, currency, address formats)
+analogy:
+  writing_concept: localization
+  engineering_equivalent: design-parameterization
+  shared_property: variant-behavior-separated-from-invariant-core
+  failure_mode: hardcoded-assumptions-prevent-adaptation
 tags: [lexicon, layer:editorial, writing-stage:editing, concern-type:stylistic]
 ---
 
@@ -73,6 +78,4 @@ Translation converts language. Localization converts culture. A text can be gram
 
 [[Plain-language]] principles — short sentences, common vocabulary, active voice — are baseline good practices that also improve localizability: idiom-free prose is easier to translate and easier to read for second-language readers without translation.
 
-## Engineering Design Parallel
-
-In the *communicate* stage of engineering design, localization affects all documentation and interface content that reaches users. For globally deployed products, localization is part of the definition of quality: a product manual that serves only the original locale's readers has failed all other readers, regardless of technical content quality.
+**Engineering parallel:** Localization maps to *design parameterization* — both separate the invariant core from variant behavior; both fail when culture-specific or language-specific assumptions are hardcoded into the artifact, preventing adaptation without redesign.

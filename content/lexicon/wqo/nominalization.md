@@ -48,6 +48,11 @@ evaluation_tools:
   - Hemingway Editor
   - Paramedic Method (manual count)
   - Vale (custom rule)
+analogy:
+  writing_concept: nominalization
+  engineering_equivalent: over-abstracted-interface-contract
+  shared_property: action-buried-in-noun-form
+  failure_mode: traceability-obscured
 tags: [lexicon, layer:mechanical, layer:structural, writing-stage:editing, concern-type:grammatical]
 ---
 
@@ -78,6 +83,4 @@ The diagnostic question: *is the main action buried inside a noun rather than ex
 
 An isolated nominalization is a mechanical fix. A systemic pattern — every action nominalized across a long passage — is a structural problem: the argument chain is obscured throughout, not just in one sentence. At that threshold, the concern escalates to [[coherence]] diagnosis before word-level correction is meaningful.
 
-## Engineering Design Parallel
-
-In engineering documentation, nominalization commonly appears in requirements and test reports: "The testing of the subsystem will require the verification of..." Here it obscures requirements authorship and makes traceability difficult. During the *test* and *improve* stages, nominalized prose in test reports buries what was actually done and what failed.
+**Engineering parallel:** Nominalization maps to *over-abstracted interface contracts* — both bury concrete actions inside noun-form abstractions, making it impossible to trace who does what or what causes what.

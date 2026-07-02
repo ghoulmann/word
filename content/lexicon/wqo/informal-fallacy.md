@@ -41,6 +41,11 @@ evaluation_tools:
   - Peer review
   - Socratic questioning (interrogate each claim and inference)
   - List of informal fallacies (ad hominem, straw man, false dichotomy, etc.)
+analogy:
+  writing_concept: informal-fallacy
+  engineering_equivalent: logical-gap-in-design-argument
+  shared_property: valid-inference-required-between-premises-and-conclusion
+  failure_mode: invalid-conclusion-accepted-because-reasoning-appears-sound
 tags: [lexicon, layer:structural, writing-stage:revising, concern-type:logical]
 ---
 
@@ -76,6 +81,4 @@ Treating fallacy detection as a mechanical task (something a grammar checker sho
 
 Informal fallacies belong at the revising stage — this is when the argument architecture is visible and can be examined as a whole. They cannot be identified during drafting (when the argument is still being constructed) and are hard to identify when embedded in a long, complex document without stepping back to assess the whole structure.
 
-## Engineering Design Parallel
-
-In engineering design, informal fallacies appear most often in the *define* stage (mischaracterizing the problem), the *research* stage (over-generalizing from limited data or citing authorities inappropriately), and the *choose* stage (presenting a selection as inevitable when alternatives exist). An engineering design rationale that contains a false dichotomy ("we can either use solution A or accept catastrophic failure") is an argument failure, not a documentation failure.
+**Engineering parallel:** Informal fallacy maps to a *logical gap in a design argument* — both involve a conclusion that appears to follow from premises but doesn't; both fail when a reviewer accepts the argument without verifying that the inference is actually valid.

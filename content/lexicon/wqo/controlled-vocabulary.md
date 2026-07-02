@@ -43,6 +43,11 @@ evaluation_tools:
   - Vale (custom term rules)
   - Search-and-replace audit for variant forms
   - Information architecture audit
+analogy:
+  writing_concept: controlled-vocabulary
+  engineering_equivalent: canonical-naming-convention
+  shared_property: one-name-per-concept-enforced-across-system
+  failure_mode: ambiguity-propagates-across-boundaries
 tags: [lexicon, layer:functional, layer:computational, writing-stage:prewriting, concern-type:architectural]
 ---
 
@@ -78,6 +83,4 @@ In practice, controlled vocabulary is maintained in:
 - Vale configuration with custom term rules
 - A content management system with term enforcement plugins
 
-## Engineering Design Parallel
-
-Controlled vocabulary in engineering corresponds to the formal definition of terms in the *define* stage: a design brief establishes unambiguous terms for the problem components. In software, it corresponds to domain-driven design's "ubiquitous language" — the shared vocabulary of the development team and stakeholders, agreed upon before coding begins to prevent the divergence where engineers and clients mean different things by the same word.
+**Engineering parallel:** Controlled vocabulary maps to *canonical naming conventions* — both enforce one name per concept across a system; both fail when synonyms proliferate and ambiguity propagates across every boundary where the name is used.

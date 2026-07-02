@@ -36,6 +36,11 @@ diagnostic_question: >
 evaluation_tools:
   - Topic sentence check: does every paragraph have a clear controlling claim?
   - Reverse outline: summarize each paragraph; identify those that contain more than one claim
+analogy:
+  writing_concept: unity
+  engineering_equivalent: single-responsibility-principle
+  shared_property: one-purpose-per-unit
+  failure_mode: concerns-entangled
 tags: [lexicon, layer:structural, writing-stage:revising, concern-type:logical]
 ---
 
@@ -67,6 +72,4 @@ If you cannot state the paragraph in one sentence, either:
 
 [[Boundary-control]] is the practice that maintains unity: the discipline to include only what belongs in a given unit and exclude everything else. A writer with good boundary control maintains unit-level unity as they draft, and recognizes during revision when a sentence has drifted. Unity is the standard; boundary control is the practice that upholds it.
 
-## Engineering Design Parallel
-
-In engineering design documentation (communicate stage), a section on "system architecture" that also contains implementation details, test results, and maintenance procedures is a unity failure. Each section should serve its stated purpose. A document with poor unity forces readers to search for information that belongs to multiple topics scattered through a single section.
+**Engineering parallel:** Unity maps to the *single-responsibility principle* — both require that each unit serve exactly one purpose; when either fails, concerns entangle and the unit cannot be understood, tested, or changed independently.

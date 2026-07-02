@@ -50,6 +50,11 @@ evaluation_tools:
   - Hemingway Editor (highlights complex sentences and passive constructions)
   - Lexical density ratio (content words / total words, aim for 40–60% for instructional prose)
   - Token count per concept (for RAG optimization)
+analogy:
+  writing_concept: semantic-density
+  engineering_equivalent: signal-to-noise-ratio
+  shared_property: meaningful-signal-per-unit-of-bandwidth
+  failure_mode: noise-dilutes-signal-reducing-retrieval-and-comprehension
 tags: [lexicon, layer:computational, layer:mechanical, writing-stage:editing, concern-type:computational]
 ---
 
@@ -83,6 +88,4 @@ Apply the lexical density ratio: count the content words (nouns, main verbs, adj
 
 An isolated over-dense sentence needs unpacking. A consistently over-dense passage is a structural problem: the reader cannot access the argument chain without background knowledge the text fails to provide. For RAG pipelines, consistent under-density across a document can make the entire corpus harder to retrieve from, because query-to-chunk matching depends on meaningful lexical overlap.
 
-## Engineering Design Parallel
-
-In requirements and specification writing, semantic density failures manifest as under-specified requirements (vague, wordy, testability-free) and over-specified requirements (so dense with acronyms and cross-references that the requirement is uninterpretable without navigating a dependency tree). During the *test* and *improve* stages, density audits are part of requirements quality review.
+**Engineering parallel:** Semantic density maps to *signal-to-noise ratio* — both measure meaningful content per unit of capacity; both fail when noise dilutes signal to the point where useful content cannot be reliably retrieved or distinguished.

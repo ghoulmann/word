@@ -42,6 +42,11 @@ evaluation_tools:
   - Contrast checker (WCAG AA: 4.5:1 minimum for body text)
   - Screen reader test: does content order in DOM match visual order?
   - 5-second test: what does a reader identify as the main point after 5 seconds?
+analogy:
+  writing_concept: information-design
+  engineering_equivalent: human-factors-design
+  shared_property: form-serves-cognitive-access
+  failure_mode: structure-imposes-load-rather-than-reducing-it
 tags: [lexicon, layer:editorial, writing-stage:editing, concern-type:architectural]
 ---
 
@@ -75,6 +80,4 @@ Information design (Layer 5, Editorial) is distinct from prose structure (Layer 
 
 Poor information design can obscure good prose structure: a structurally coherent argument presented as an unbroken wall of text is less accessible than the same argument with visual signals. Good information design cannot compensate for structural incoherence — visual hierarchy without logical hierarchy misleads.
 
-## Engineering Design Parallel
-
-In the *build* stage of engineering design, information design corresponds to interface design and user experience: how information is displayed, how users navigate a system, how visual encoding communicates data. Poorly designed dashboards, documentation, and reports impose information design failures on engineering outputs.
+**Engineering parallel:** Information design maps to *human factors design* — both make form serve cognitive access; both fail when structure imposes processing load rather than reducing it, making the artifact harder to use than its content warrants.

@@ -43,6 +43,11 @@ evaluation_tools:
   - Hemingway Editor (grade level display)
   - Microsoft Word readability statistics
   - Readable.io
+analogy:
+  writing_concept: readability-metrics
+  engineering_equivalent: static-analysis-metrics
+  shared_property: proxy-measurement-of-non-directly-observable-quality
+  failure_mode: metric-optimization-without-underlying-quality-improvement
 tags: [lexicon, layer:mechanical, writing-stage:editing, concern-type:computational]
 ---
 
@@ -83,6 +88,4 @@ They do not detect:
 
 Target reading level is audience-dependent. For general public communications, US government guidelines recommend a grade-8 reading level. For safety-critical communications reaching second-language learners or readers with cognitive disabilities, lower targets (grade 5–6) are appropriate. For specialist technical documentation with expert readers, grade-level targets are less relevant than jargon management and structural clarity.
 
-## Engineering Design Parallel
-
-In the *test* stage of engineering design, readability metrics are one form of acceptance criteria for communication deliverables: "user documentation shall achieve a Flesch-Kincaid Grade Level of 8 or below for consumer-facing content." They provide a measurable, automatable threshold.
+**Engineering parallel:** Readability metrics map to *static analysis metrics* — both are proxy measurements for a quality attribute that cannot be observed directly; both can be optimized without actually improving the underlying quality they were designed to indicate.

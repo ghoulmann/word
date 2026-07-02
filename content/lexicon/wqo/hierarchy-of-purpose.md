@@ -40,6 +40,11 @@ diagnostic_question: >
 evaluation_tools:
   - One-sentence purpose statement ("This document will... so that...")
   - Primary/secondary purpose audit during revision
+analogy:
+  writing_concept: hierarchy-of-purpose
+  engineering_equivalent: requirements-prioritization
+  shared_property: goals-ordered-by-dependency-and-priority
+  failure_mode: lower-priority-constraint-blocks-higher-priority-goal
 tags: [lexicon, layer:functional, writing-stage:prewriting, concern-type:rhetorical]
 ---
 
@@ -69,6 +74,4 @@ A document with a misidentified or absent purpose hierarchy produces structural 
 
 This is the primary example of Layer 1 cascade: functional misalignment produces structural incoherence because the organizing logic is wrong.
 
-## Engineering Design Parallel
-
-In engineering design, hierarchy of purpose corresponds directly to the *define* stage: establishing the problem statement, the design criteria, and the hierarchy of constraints (must-haves vs. nice-to-haves vs. constraints). Engineering design without a clear problem statement is as directionless as writing without a purpose hierarchy. Every downstream decision is made against the wrong target.
+**Engineering parallel:** Hierarchy of purpose maps to *requirements prioritization* — both impose a dependency ordering on goals; both fail when a lower-priority constraint is allowed to block a higher-priority objective.

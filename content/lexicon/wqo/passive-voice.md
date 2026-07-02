@@ -41,6 +41,11 @@ evaluation_tools:
   - Microsoft Editor
   - Vale (custom rule)
   - Paramedic Method (manual)
+analogy:
+  writing_concept: passive-voice
+  engineering_equivalent: unattributed-requirement
+  shared_property: agent-absent-from-statement
+  failure_mode: ownership-unrecoverable
 tags: [lexicon, layer:mechanical, writing-stage:editing, concern-type:grammatical]
 ---
 
@@ -76,6 +81,4 @@ Passive voice and [[nominalization]] are commonly confused because both patterns
 
 A sentence can contain both: "The implementation of the system was completed by the team." The fix for each is different: restoring active voice (for passive), restoring the verb (for nominalization).
 
-## Engineering Design Parallel
-
-In requirements documentation and test reports (stages: build, test, improve), passive voice generates ambiguity about responsibility and action. "The module will be validated" — by whom, with what method, against what criteria? Active voice in requirements forces explicit ownership: "The test engineer will validate the module using acceptance test procedure ATP-04."
+**Engineering parallel:** Passive voice maps to *unattributed requirements* — both suppress the agent responsible for an action, making ownership unrecoverable and accountability impossible to assign.

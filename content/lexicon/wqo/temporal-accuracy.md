@@ -52,6 +52,11 @@ evaluation_tools:
   - Automated staleness alerts (docs-as-code: flag content not updated in N months)
   - Diff against source of truth (compare docs to API spec, changelog, or system state)
   - CI gate (build fails if content older than threshold for time-sensitive documents)
+analogy:
+  writing_concept: temporal-accuracy
+  engineering_equivalent: configuration-management
+  shared_property: recorded-state-matches-current-reality
+  failure_mode: stale-state-propagates-as-authoritative
 tags: [lexicon, layer:functional, writing-stage:publishing, concern-type:technical]
 ---
 
@@ -91,6 +96,4 @@ The diagnostic question: has the thing this document describes changed since the
 
 A single outdated fact is a factual error. A document whose underlying subject has materially changed is systematically wrong: every section that touches the changed topic is unreliable. For safety-critical content, a single outdated requirement, dosage, or procedure is potentially harmful. At that threshold, temporal inaccuracy is not an editorial concern — it's a content governance failure.
 
-## Engineering Design Parallel
-
-In engineering, temporal accuracy corresponds to the requirement that specifications, test plans, and design documents reflect the current state of the system. Documentation debt — the gap between documented and actual system behavior — is an operational risk in complex systems. During the *improve* and *communicate* stages, documentation currency is a continuous quality maintenance task, not a one-time publishing step.
+**Engineering parallel:** Temporal accuracy maps to *configuration management* — both require that recorded state match current reality; both fail when stale state is treated as authoritative and downstream decisions are made on obsolete information.

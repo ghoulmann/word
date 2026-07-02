@@ -44,6 +44,11 @@ evaluation_tools:
   - Flesch-Kincaid (sentence length is a primary input)
   - Word count per sentence (aim for 15–25 words average for instructional prose; vary)
   - Read aloud test (can the sentence be read in a single breath?)
+analogy:
+  writing_concept: sentence-length
+  engineering_equivalent: cyclomatic-complexity
+  shared_property: cognitive-load-per-unit-of-processing
+  failure_mode: unit-exceeds-working-memory-capacity
 tags: [lexicon, layer:mechanical, writing-stage:editing, concern-type:stylistic]
 ---
 
@@ -79,6 +84,4 @@ Use the Hemingway Editor or a similar tool to flag sentences over 25 words. Then
 
 A single long sentence is a local hazard. A passage of consistently long sentences makes the paragraph's logical structure illegible: readers cannot determine which claims are primary and which are subordinate. At that scale, sentence-length revision is part of a structural edit, not a copy edit.
 
-## Engineering Design Parallel
-
-In requirements writing, sentence length directly affects testability. A requirement sentence with multiple conjunctions and nested conditionals ("The system shall X when Y, unless Z, provided that W, and shall notify the user if Q") is likely to test as ambiguous. Requirements quality standards often specify maximum sentence length for this reason. During the *build* and *test* stages, long requirements sentences are a structural defect, not a stylistic one.
+**Engineering parallel:** Sentence length maps to *cyclomatic complexity* — both measure cognitive load per unit of processing; both fail when a single unit (sentence or function) contains enough branches and nested dependencies to exceed working-memory capacity.

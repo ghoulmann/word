@@ -36,6 +36,11 @@ evaluation_tools:
   - Document outline review
   - Section-level reverse outline
   - Information architecture audit
+analogy:
+  writing_concept: boundary-control
+  engineering_equivalent: interface-definition-and-scope
+  shared_property: explicit-boundary-prevents-cross-contamination
+  failure_mode: scope-creep-entangles-independent-units
 tags: [lexicon, layer:structural, writing-stage:revising, concern-type:architectural]
 ---
 
@@ -65,6 +70,4 @@ At document scale, boundary control is the work of an information architect: dec
 
 Diataxis (the topic-type framework) is one approach to boundary control at document scale: its four topic types (tutorial, how-to guide, reference, explanation) define distinct kinds of purposes, and boundary control means keeping each document type within its kind.
 
-## Engineering Design Parallel
-
-In the *build* stage of engineering design, boundary control corresponds to interface definition and modular decomposition: each component does one thing, its inputs and outputs are explicit, and it doesn't reach into another component's concerns. A module that performs several different functions, or that has side effects outside its defined interface, has a boundary control failure — the engineering equivalent of a paragraph that covers multiple topics.
+**Engineering parallel:** Boundary control maps to *interface definition and scope management* — both make explicit what belongs inside a unit and what lies outside it; both fail when concerns bleed across the boundary and independent units become entangled.

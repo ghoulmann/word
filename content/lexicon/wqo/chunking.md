@@ -39,6 +39,11 @@ evaluation_tools:
   - RAG chunk simulation (split document by heading level; check each chunk for completeness)
   - Information architecture review
   - Vector search test (retrieve a chunk; verify it answers a specific question without requiring other chunks)
+analogy:
+  writing_concept: chunking
+  engineering_equivalent: modular-decomposition
+  shared_property: single-responsibility-per-unit
+  failure_mode: entangled-dependencies-prevent-independent-use
 tags: [lexicon, layer:computational, writing-stage:prewriting, concern-type:computational]
 ---
 
@@ -64,6 +69,4 @@ Optimal chunking for automated retrieval aligns structural boundaries (headings,
 
 [[Tokenomics]] concerns how text uses tokens within a model's context window. Chunking determines the size and semantic completeness of the units that enter that context window. A chunk that is too large may exceed the context limit or dilute attention; a chunk that is too small may lack the context needed to answer a query.
 
-## Engineering Design Parallel
-
-In the *define* and *build* stages of engineering design, chunking corresponds to modular decomposition: each module has a well-defined interface, a single responsibility, and can be understood without requiring context from every other module. A documentation architecture with poor chunking is equivalent to a codebase with poor modularization — everything is entangled, nothing is independently testable.
+**Engineering parallel:** Chunking maps to *modular decomposition* — both require that each unit be self-contained with a single responsibility; both fail when units are too large or too entangled to be understood, navigated, or consumed independently.

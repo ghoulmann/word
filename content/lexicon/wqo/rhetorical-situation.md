@@ -41,6 +41,11 @@ evaluation_tools:
   - One-sentence purpose statement: "This [document type] will [action] so that [audience] can [outcome]"
   - Audience persona development
   - Context interview (what prompted this document? who requested it? what decision does it support?)
+analogy:
+  writing_concept: rhetorical-situation
+  engineering_equivalent: problem-statement
+  shared_property: context-constrains-solution-space
+  failure_mode: solution-designed-for-wrong-constraints
 tags: [lexicon, layer:functional, writing-stage:prewriting, concern-type:rhetorical]
 ---
 
@@ -79,6 +84,4 @@ A text that fails to analyze its rhetorical situation typically produces one of 
 - **Wrong level of urgency** — the text is appropriately informative but fails to motivate action in a situation that required action.
 - **Wrong constraints** — the text violates genre conventions, organizational requirements, or audience expectations in ways that undermine credibility.
 
-## Engineering Design Parallel
-
-In engineering, the rhetorical situation corresponds to the *define* stage: identifying the stakeholders, the problem being solved, the constraints (budget, regulation, physical laws, existing systems), and the success criteria. A design that begins without defining the situation optimizes for the wrong thing. The design brief is an engineering document whose purpose is to make the rhetorical situation explicit before any design work begins.
+**Engineering parallel:** Rhetorical situation maps to the *problem statement* — both define the context that constrains all downstream choices; both fail when the constraints are wrong or unexamined, producing a solution perfectly fitted to the wrong problem.
