@@ -16,6 +16,9 @@ relationships:
     - plain-language
     - signposting
     - rhetorical-arrangement
+classification:
+  layer: functional
+  writing_stage: [editing, publishing]
 tags: [lexicon, taxonomy:wqo]
 ---
 

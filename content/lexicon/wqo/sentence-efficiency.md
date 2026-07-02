@@ -8,7 +8,6 @@ classification:
   writing_stage: revising
 relationships:
   aspect_of:
-    - lard-factor
   related_to:
     - semantic-density
     - nominalization

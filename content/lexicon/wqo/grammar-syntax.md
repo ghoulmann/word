@@ -30,6 +30,7 @@ classification:
   risk_severity: credibility
   responsible_role: copy-editor
 relationships:
+  produces: word-level-error
   related_to: [punctuation, orthography, passive-voice, nominalization]
   controlled_by: house-style
 diagnostic_question: >

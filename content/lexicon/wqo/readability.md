@@ -18,6 +18,9 @@ relationships:
     - plain-language
   related_to:
     - sentence-length
+classification:
+  layer: functional
+  writing_stage: [revising, editing, publishing]
 tags: [lexicon, taxonomy:wqo]
 ---
 

@@ -16,6 +16,9 @@ relationships:
   supported_by:
     - plain-language
     - terminology-consistency
+classification:
+  layer: functional
+  writing_stage: [editing, publishing]
 tags: [lexicon, taxonomy:wqo]
 ---
 
