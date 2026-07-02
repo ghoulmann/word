@@ -8,11 +8,11 @@ classification:
   audience_sensitivity: [gender-neutral, cross-cultural, accessibility-needs]
 relationships:
   addressed_by:
-    - wqo/localization
-    - wqo/audience-awareness
+    - localization
+    - audience-awareness
   related_to:
-    - wqo/tone-voice-cadence
-    - wqo/house-style
+    - tone-voice-cadence
+    - house-style
 tags: [lexicon, taxonomy:wqo]
 ---
 

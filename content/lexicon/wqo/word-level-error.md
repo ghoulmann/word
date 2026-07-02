@@ -8,11 +8,11 @@ classification:
   risk_severity: moderate
 relationships:
   subtype_of:
-    - wqo/nominalization
+    - nominalization
   related_to:
-    - wqo/orthography
-    - wqo/grammar-syntax
-    - wqo/terminology-consistency
+    - orthography
+    - grammar-syntax
+    - terminology-consistency
 tags: [lexicon, taxonomy:wqo]
 ---
 

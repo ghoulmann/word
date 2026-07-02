@@ -8,13 +8,13 @@ classification:
   risk_severity: functional
 relationships:
   degraded_by:
-    - wqo/chunking
-    - wqo/heading-clarity
-    - wqo/semantic-density
-    - wqo/temporal-accuracy
-    - wqo/tokenomics
+    - chunking
+    - heading-clarity
+    - semantic-density
+    - temporal-accuracy
+    - tokenomics
   supported_by:
-    - wqo/controlled-vocabulary
+    - controlled-vocabulary
 tags: [lexicon, taxonomy:wqo]
 ---
 

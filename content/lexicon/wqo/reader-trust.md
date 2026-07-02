@@ -8,14 +8,14 @@ classification:
   risk_severity: critical
 relationships:
   threatened_by:
-    - wqo/asset-validity
-    - wqo/cognitive-overload
-    - wqo/informal-fallacy
-    - wqo/temporal-accuracy
-    - wqo/weak-words
+    - asset-validity
+    - cognitive-overload
+    - informal-fallacy
+    - temporal-accuracy
+    - weak-words
   supported_by:
-    - wqo/plain-language
-    - wqo/terminology-consistency
+    - plain-language
+    - terminology-consistency
 tags: [lexicon, taxonomy:wqo]
 ---
 

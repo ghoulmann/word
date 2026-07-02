@@ -8,13 +8,13 @@ classification:
   risk_severity: functional
 relationships:
   caused_by:
-    - wqo/informal-fallacy
-    - wqo/nominalization
-    - wqo/passive-voice
+    - informal-fallacy
+    - nominalization
+    - passive-voice
   mitigated_by:
-    - wqo/coherence
-    - wqo/signposting
-    - wqo/rhetorical-arrangement
+    - coherence
+    - signposting
+    - rhetorical-arrangement
 tags: [lexicon, taxonomy:wqo]
 ---
 

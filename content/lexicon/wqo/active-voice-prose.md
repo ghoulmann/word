@@ -7,11 +7,11 @@ classification:
   layer: mechanical
 relationships:
   produced_by:
-    - wqo/paramedic-method
+    - paramedic-method
   related_to:
-    - wqo/active-voice
-    - wqo/lard-factor
-    - wqo/nominalization
+    - active-voice
+    - lard-factor
+    - nominalization
 tags: [lexicon, taxonomy:wqo]
 ---
 

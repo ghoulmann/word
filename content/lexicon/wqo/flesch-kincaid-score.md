@@ -8,11 +8,11 @@ classification:
   determinism: deterministic
 relationships:
   measures:
-    - wqo/readability
-    - wqo/readability-metrics
+    - readability
+    - readability-metrics
   related_to:
-    - wqo/sentence-length
-    - wqo/gunning-fog-index
+    - sentence-length
+    - gunning-fog-index
 tags: [lexicon, taxonomy:wqo]
 ---
 

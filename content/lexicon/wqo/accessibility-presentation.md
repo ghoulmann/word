@@ -9,10 +9,10 @@ classification:
   audience_sensitivity: accessibility-needs
 relationships:
   addressed_by:
-    - wqo/information-design
+    - information-design
   related_to:
-    - wqo/localization
-    - wqo/plain-language
+    - localization
+    - plain-language
 tags: [lexicon, taxonomy:wqo]
 ---
 

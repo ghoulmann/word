@@ -8,11 +8,11 @@ classification:
   writing_stage: [drafting, revising]
 relationships:
   related_to:
-    - wqo/e-prime
-    - wqo/passive-voice
+    - e-prime
+    - passive-voice
   supports:
-    - wqo/coherence
-    - wqo/reader-comprehension
+    - coherence
+    - reader-comprehension
 tags: [lexicon, taxonomy:wqo]
 ---
 

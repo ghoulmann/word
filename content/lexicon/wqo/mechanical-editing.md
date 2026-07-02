@@ -9,15 +9,15 @@ classification:
   responsible_role: [copyeditor, self-editor]
 relationships:
   prerequisite_of:
-    - wqo/coherence
-    - wqo/rhetorical-arrangement
-    - wqo/unity
+    - coherence
+    - rhetorical-arrangement
+    - unity
   addresses:
-    - wqo/grammar-syntax
-    - wqo/punctuation
-    - wqo/orthography
-    - wqo/nominalization
-    - wqo/passive-voice
+    - grammar-syntax
+    - punctuation
+    - orthography
+    - nominalization
+    - passive-voice
 tags: [lexicon, taxonomy:wqo]
 ---
 

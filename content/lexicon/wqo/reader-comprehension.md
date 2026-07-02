@@ -8,13 +8,13 @@ classification:
   risk_severity: functional
 relationships:
   impeded_by:
-    - wqo/coherence
-    - wqo/cognitive-overload
-    - wqo/heading-clarity
+    - coherence
+    - cognitive-overload
+    - heading-clarity
   supported_by:
-    - wqo/plain-language
-    - wqo/signposting
-    - wqo/rhetorical-arrangement
+    - plain-language
+    - signposting
+    - rhetorical-arrangement
 tags: [lexicon, taxonomy:wqo]
 ---
 

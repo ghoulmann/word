@@ -7,16 +7,16 @@ classification:
   risk_severity: functional
 relationships:
   impeded_by:
-    - wqo/nominalization
-    - wqo/cognitive-overload
-    - wqo/lard-factor
+    - nominalization
+    - cognitive-overload
+    - lard-factor
   measured_by:
-    - wqo/flesch-kincaid-score
-    - wqo/gunning-fog-index
-    - wqo/readability-metrics
+    - flesch-kincaid-score
+    - gunning-fog-index
+    - readability-metrics
   supported_by:
-    - wqo/plain-language
-    - wqo/sentence-length
+    - plain-language
+    - sentence-length
 tags: [lexicon, taxonomy:wqo]
 ---
 

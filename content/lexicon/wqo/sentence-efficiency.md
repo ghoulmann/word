@@ -8,11 +8,11 @@ classification:
   writing_stage: revising
 relationships:
   aspect_of:
-    - wqo/lard-factor
+    - lard-factor
   related_to:
-    - wqo/semantic-density
-    - wqo/nominalization
-    - wqo/weak-words
+    - semantic-density
+    - nominalization
+    - weak-words
 tags: [lexicon, taxonomy:wqo]
 ---
 
