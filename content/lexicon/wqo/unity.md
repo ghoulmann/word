@@ -39,7 +39,7 @@ evaluation_tools:
 analogy:
   writing_concept: unity
   engineering_equivalent: single-responsibility-principle
-  shared_property: one-purpose-per-unit
+  shared_property: internal-coherence-around-single-purpose
   failure_mode: concerns-entangled
 tags: [lexicon, layer:structural, writing-stage:revising, concern-type:logical]
 ---

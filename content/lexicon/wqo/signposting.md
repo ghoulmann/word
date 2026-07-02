@@ -47,7 +47,7 @@ evaluation_tools:
 analogy:
   writing_concept: signposting
   engineering_equivalent: interface-documentation
-  shared_property: navigation-contract-predicts-structure
+  shared_property: system-level-navigation-enables-orientation
   failure_mode: user-cannot-orient-without-exhaustive-exploration
 tags: [lexicon, layer:structural, writing-stage:revising, concern-type:rhetorical]
 ---

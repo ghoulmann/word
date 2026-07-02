@@ -14,7 +14,6 @@ classification:
 relationships:
   related_to:
     - field-042
-    - field-043
 tags: [lexicon, taxonomy:iso8583, domain:payments, iso8583:field]
 ---
 

@@ -13,8 +13,6 @@ classification:
 relationships:
   related_to:
     - field-011
-    - field-012
-    - field-013
 tags: [lexicon, taxonomy:iso8583, domain:payments, iso8583:field]
 ---
 
@@ -23,8 +21,8 @@ tags: [lexicon, taxonomy:iso8583, domain:payments, iso8583:field]
 The date and time the message was transmitted, in UTC/GMT, formatted as MMDDhhmmss (10 digits). Used for reconciliation and duplicate detection.
 
 Field 007 is always in UTC regardless of the merchant or terminal
-time zone. Local transaction time is carried in [[field-012]] and
-[[field-013]] separately.
+time zone. Local transaction time is carried in Field 012 (Local Transaction Time) and
+Field 013 (Local Transaction Date) separately.
 
 The combination of [[field-011|STAN]] and transmission date/time
 provides a practically unique transaction identifier for a given

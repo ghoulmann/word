@@ -29,7 +29,7 @@ Identifies the function of a network management message (MTI 0800/0810). Specifi
 | 302 | Cut-over |
 
 Network management messages using Field 070 are sent as
-[[mti-0800]] and acknowledged with [[mti-0810]]. Unlike
+[[mti-0800]] and acknowledged with MTI 0810 (Network Management Response). Unlike
 cardholder transaction messages, they do not carry PAN or
 amount data — they operate at the session or link level.
 

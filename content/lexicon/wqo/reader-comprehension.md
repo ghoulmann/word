@@ -8,10 +8,11 @@ classification:
   risk_severity: functional
 relationships:
   impeded_by:
-    - coherence
+    - coherence-failure
     - cognitive-overload
     - heading-clarity
   supported_by:
+    - coherence
     - plain-language
     - signposting
     - rhetorical-arrangement

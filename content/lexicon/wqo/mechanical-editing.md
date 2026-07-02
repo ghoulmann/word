@@ -8,7 +8,7 @@ classification:
   writing_stage: [revising, peer-review]
   responsible_role: [copyeditor, self-editor]
 relationships:
-  prerequisite_of:
+  requires:
     - coherence
     - rhetorical-arrangement
     - unity

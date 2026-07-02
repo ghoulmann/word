@@ -49,7 +49,7 @@ evaluation_tools:
 analogy:
   writing_concept: heading-clarity
   engineering_equivalent: interface-specification
-  shared_property: contract-predicts-contents
+  shared_property: section-level-contract-defines-scope
   failure_mode: consumers-cannot-navigate-without-reading-everything
 tags: [lexicon, layer:structural, writing-stage:revising, concern-type:rhetorical]
 ---

@@ -12,7 +12,6 @@ classification:
   max_length: 3
 relationships:
   related_to:
-    - field-025
     - field-055
 tags: [lexicon, taxonomy:iso8583, domain:payments, iso8583:field]
 ---

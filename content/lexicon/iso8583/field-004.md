@@ -12,9 +12,7 @@ classification:
   max_length: 12
 relationships:
   related_to:
-    - field-006
     - field-049
-    - field-054
 tags: [lexicon, taxonomy:iso8583, domain:payments, iso8583:field]
 ---
 
@@ -30,6 +28,6 @@ For pre-authorizations (hotel check-in, car rental), Field 004
 carries the estimated amount. The final settled amount may differ
 and is captured in a separate completion message.
 
-[[field-006]] carries the same amount converted to the
+Field 006 (Cardholder Billing Amount) carries the same amount converted to the
 cardholder's billing currency when dynamic currency conversion
 applies.

@@ -14,7 +14,6 @@ classification:
 relationships:
   related_to:
     - field-041
-    - field-043
     - field-018
 tags: [lexicon, taxonomy:iso8583, domain:payments, iso8583:field]
 ---
@@ -31,7 +30,6 @@ MIDs appear on cardholder statements, chargeback documentation,
 and scheme reporting. A merchant with multiple locations typically
 has one MID per location, or one MID per brand/concept.
 
-Scheme compliance requires that the MID and [[field-043|merchant
-name/location]] accurately reflect the entity processing
+Scheme compliance requires that the MID and Field 043 (merchant name/location) accurately reflect the entity processing
 transactions — misrepresenting the merchant is a scheme violation
 (transaction laundering).

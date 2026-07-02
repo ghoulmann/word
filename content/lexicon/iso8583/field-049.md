@@ -13,7 +13,6 @@ classification:
 relationships:
   related_to:
     - field-004
-    - field-006
 tags: [lexicon, taxonomy:iso8583, domain:payments, iso8583:field]
 ---
 
@@ -37,5 +36,5 @@ JPY (392) has no minor unit (amounts are whole yen);
 USD (840) has two decimal places (amounts in cents).
 
 For dynamic currency conversion transactions, [[field-049]]
-carries the transaction currency and [[field-006]] carries
+carries the transaction currency and Field 006 (Cardholder Billing Amount) carries
 the cardholder billing currency amount.

@@ -7,8 +7,8 @@ classification:
   layer: mechanical
   risk_severity: moderate
 relationships:
-  subtype_of:
-    - nominalization
+  addressed_by:
+    - mechanical-editing
   related_to:
     - orthography
     - grammar-syntax

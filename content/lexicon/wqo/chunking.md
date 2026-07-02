@@ -42,7 +42,7 @@ evaluation_tools:
 analogy:
   writing_concept: chunking
   engineering_equivalent: modular-decomposition
-  shared_property: single-responsibility-per-unit
+  shared_property: boundary-placement-enables-independent-retrieval
   failure_mode: entangled-dependencies-prevent-independent-use
 tags: [lexicon, layer:computational, writing-stage:prewriting, concern-type:computational]
 ---

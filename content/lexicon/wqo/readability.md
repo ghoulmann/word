@@ -16,6 +16,7 @@ relationships:
     - readability-metrics
   supported_by:
     - plain-language
+  related_to:
     - sentence-length
 tags: [lexicon, taxonomy:wqo]
 ---
